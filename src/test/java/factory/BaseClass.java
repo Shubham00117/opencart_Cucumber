@@ -80,7 +80,8 @@ public class BaseClass {
 
 	public static Properties getProperties() throws IOException
 	{		 
-        FileReader file=new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
+        String path = System.getProperty("user.dir") + "/src/test/resources/config.properties";
+FileReader file = new FileReader(path);
        		
         p=new Properties();
 		p.load(file);
@@ -116,3 +117,4 @@ public class BaseClass {
 	
 	
 }
+
