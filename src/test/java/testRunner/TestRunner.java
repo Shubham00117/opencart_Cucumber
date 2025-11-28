@@ -10,7 +10,8 @@ import io.cucumber.junit.CucumberOptions;
 					//features= {".//Features/"},
 					//features= {".//Features/Login.feature"},
 					//features= {".//Features/LoginDDTExcel.feature"},
-					features= {".//Features/Login.feature",".//Features/Registration.feature"},
+						feature={".//Features/Registration.feature"},
+					//features= {".//Features/Login.feature",".//Features/Registration.feature"},
 					//features= {"@target/rerun.txt"},
 					glue="stepDefinitions",
 					plugin= {"pretty", "html:reports/myreport.html", 
@@ -30,3 +31,4 @@ import io.cucumber.junit.CucumberOptions;
 public class TestRunner {
 
 		}
+
